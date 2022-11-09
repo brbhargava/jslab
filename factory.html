@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Factory Function</title>
+</head>
+<h1>Inventory Management</h1>
+<script>
+	var book = function(isbn,title,year,author){
+	var book ={};
+		book.isbn=isbn;
+		book.title=title;
+		book.year=year;
+		book.author=author;
+		book.greeting=function(){
+			return("ISBN:" + book.isbn + "Title" + book.title + "year" + book.year + "Author" + book.author);
+}
+return book;
+};
+
+var book1 = book(564,"js", "john", 2022);
+console.log(book1.greeting());
+</script>
+</body>
+</html>
